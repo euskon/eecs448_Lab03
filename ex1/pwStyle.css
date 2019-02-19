@@ -1,8 +1,8 @@
 #pwMatchError {
-  display: none;
   color: "red";
+  page-break-after: avoid;
 }
 #pwLengthError {
-  display: none;
   color: "red";
+  page-break-after: avoid;
 }

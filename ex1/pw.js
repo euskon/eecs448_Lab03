@@ -1,7 +1,10 @@
 function isValidPW(){
-  if(isMatch() && lengthCheck())
-  {
+  if(isMatch() && lengthCheck()){
     return true;
+  }
+  else{
+    //
+    alert("");
   }
 }
 function isMatch(){
@@ -15,8 +18,7 @@ function isMatch(){
 function lengthCheck(){
   let lhs = document.getElementById("pwField1").value;
   let rhs = document.getElementById("pwField2").value;
-  if(lhs.length < 8)
-  {
+  if(lhs.length < 8){
     return false;
   }
   return true;

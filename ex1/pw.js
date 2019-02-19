@@ -1,12 +1,23 @@
 function isValidPW(){
-  let input = document.getElementById("pwField1").value;
-  console.log(input);
+  if(isMatch() && lengthCheck())
+  {
+    return true;
+  }
 }
 function isMatch(){
-  let lhs = document.getElementById("pwField1");
-  let rhs = document.getElementById("pwField2");
+  let lhs = document.getElementById("pwField1").value;
+  let rhs = document.getElementById("pwField2").value;
   if(lhs === rhs){
     return true;
   }
   return false;
+}
+function lengthCheck(){
+  let lhs = document.getElementById("pwField1").value;
+  let rhs = document.getElementById("pwField2").value;
+  if(lhs.length < 8)
+  {
+    return false;
+  }
+  return true;
 }

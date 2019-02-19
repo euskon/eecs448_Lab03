@@ -1,6 +1,8 @@
 #pwMatchError {
   display: none;
+  color: "red";
 }
 #pwLengthError {
   display: none;
+  color: "red";
 }

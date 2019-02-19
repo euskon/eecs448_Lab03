@@ -23,3 +23,6 @@ function lengthCheck(){
   }
   return true;
 }
+//want list:
+//make function that calls css changes when passwords dont match
+//make text

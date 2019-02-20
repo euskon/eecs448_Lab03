@@ -13,14 +13,20 @@ function isValidPW(){
     return true;
   } else{
     //return valid error message
+    let pwMatchMsg = document.getElementById("pwMatchError");
+    let tooShortMsg = document.getElementById("pwLengthError");
     if(!isMatch()){
-      let pwMatchMsg = document.getElementById("pwMatchError");
+
       pwMatchMsg.style.visibility = "visible";
+    } else {
+      pwMatchMsg.style.visibility = "hidden";
     }
-    if(!tooShort()){
-      let tooShortMsg = document.getElementById("pwLengthError");
+    if(!tooShort()){      
       tooShortMsg.style.visibility = "visible";
+    } else {
+      tooShortMsg.style.visibility = "hidden";
     }
+
   }
 }
 function isMatch(){

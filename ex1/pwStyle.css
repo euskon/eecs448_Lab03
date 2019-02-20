@@ -1,8 +1,8 @@
 #pwMatchError {
-  color: "red";
+  color: FF0000;
   page-break-after: avoid;
 }
 #pwLengthError {
-  color: "red";
+  color: FF0000;
   page-break-after: avoid;
 }

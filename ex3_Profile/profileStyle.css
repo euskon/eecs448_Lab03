@@ -1,0 +1,25 @@
+p.bio {
+  margin-right:50%;
+  background-color: blue;
+  color: white;
+  font-size: 12pt;
+  font-family: serif;
+}
+p.bio:hover {
+  font-size: 16pt;
+  font-family: fantasy;
+}
+body {
+  background-image:url("https://media.swncdn.com/cms/CW/faith/14583-comfort-grief-friendship-love-teddy-bears-light-wide.1200w.tn.jpg");
+  background-repeat:no-repeat;
+  background-size:100%;
+  background-attachment:fixed
+}
+a {
+  background-color: green;
+  color: white;
+}
+a:hover {
+  background-color: red;
+  color: green;
+}

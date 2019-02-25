@@ -1,15 +1,19 @@
 let imgIndex = 0;
+let slides = ["https://picsum.photos/200",
+              "https://picsum.photos/201",
+              "https://picsum.photos/202",
+              "https://picsum.photos/203"];
 function img_iterate(){
 
 }
 function nextSlide(n){
-  let slides = ["https://picsum.photos/200", "https://picsum.photos/201", "https://picsum.photos/202", "https://picsum.photos/203"]
-  if ((imgIndex + n) > slides.length){
 
+  if ((imgIndex + n)> slides.length){
+    imgIndex = 0;
+  } else{
+    imgIndex += n;
   }
+  //if (n < 0) {slideIndex = slides.length}
+  document.getElementById("myImg").src = slides[imgIndex];
 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
 }

@@ -9,14 +9,17 @@
 		<title> SlideShow by Zach </title>
 	</head>
 
-	<body>
-    <div style="max-width:1000px, position:relative, margin: auto">
+	<body style="background-image:url('https://media.swncdn.com/cms/CW/faith/14583-comfort-grief-friendship-love-teddy-bears-light-wide.1200w.tn.jpg');
+							 background-repeat:no-repeat";>
+    <div style="max-width:1000px;position:relative;margin: auto">
+			<h3>Photos provided by: <a href="https://picsum.photos/">https://picsum.photos/</a>
       <div>
         <img src="https://picsum.photos/200">
       </div>
       <br>
       <div>
-        <button type="button" onclick="prevSlide()">
+        <button type="button" id="prevBtn" onclick="prevSlide()">Prev</button>
+				<button type="button" id="nextBtn" onclick="nextSlide()">Next</button>
     </div>
 	</body>
 </html>
